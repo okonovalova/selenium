@@ -1,21 +1,16 @@
-import org.aspectj.lang.annotation.After;
+package mailru;
+
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.*;
-import pages.AuthPage;
-import pages.NonAuthPage;
+import mailru.pages.AuthPage;
+import mailru.pages.NonAuthPage;
 
 import java.time.Duration;
-import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TestSeleniumTest {
+class MailruSeleniumTest {
 
     @Test
     public void openPageMailRuFailedAuthTest() {

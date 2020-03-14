@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b38ee885-ec81-4821-8d4b-75ba0431cddf" name="Default Changelist" comment="" />
+    <list default="true" id="b38ee885-ec81-4821-8d4b-75ba0431cddf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/teva_life/TevaLifeSeleniumTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/teva_life/model/CardWebElementData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/selenium_tests/TestSelenium.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/selenium_tests/TestSeleniumTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/selenium_tests/pages/AuthPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/selenium_tests/pages/NonAuthPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestSelenium.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestSeleniumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mailru/MailruSeleniumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AuthPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mailru/pages/AuthPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/NonAuthPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mailru/pages/NonAuthPage.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +29,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YFNgbD56nf4sekqnWZzzOmBds3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,9 +47,11 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.32068965" />
@@ -39,11 +61,14 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="teva_life" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestSeleniumTest">
+  <component name="RunManager" selected="JUnit.TevaLifeSeleniumTest.checkCountStories">
     <configuration name="TestSelenium" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestSelenium" />
       <module name="selenium_tests" />
@@ -51,40 +76,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSeleniumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MailruSeleniumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_tests" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSeleniumTest" />
+      <option name="PACKAGE_NAME" value="mailru" />
+      <option name="MAIN_CLASS_NAME" value="mailru.MailruSeleniumTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSeleniumTest.openPageMailRuAuthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MailruSeleniumTest.openPageMailRuAuthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_tests" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSeleniumTest" />
+      <option name="PACKAGE_NAME" value="mailru" />
+      <option name="MAIN_CLASS_NAME" value="mailru.MailruSeleniumTest" />
       <option name="METHOD_NAME" value="openPageMailRuAuthTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSeleniumTest.openPageMailRuFailedAuthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MailruSeleniumTest.openPageMailRuFailedAuthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_tests" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSeleniumTest" />
+      <option name="PACKAGE_NAME" value="mailru" />
+      <option name="MAIN_CLASS_NAME" value="mailru.MailruSeleniumTest" />
       <option name="METHOD_NAME" value="openPageMailRuFailedAuthTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSeleniumTest.openPageMailRuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TevaLifeSeleniumTest.checkCountStories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_tests" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSeleniumTest" />
-      <option name="METHOD_NAME" value="openPageMailRuTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="teva_life.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="teva_life" />
+      <option name="MAIN_CLASS_NAME" value="teva_life.TevaLifeSeleniumTest" />
+      <option name="METHOD_NAME" value="checkCountStories" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -92,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestSeleniumTest" />
+        <item itemvalue="JUnit.TevaLifeSeleniumTest.checkCountStories" />
+        <item itemvalue="JUnit.MailruSeleniumTest" />
         <item itemvalue="Application.TestSelenium" />
-        <item itemvalue="JUnit.TestSeleniumTest.openPageMailRuFailedAuthTest" />
-        <item itemvalue="JUnit.TestSeleniumTest.openPageMailRuAuthTest" />
-        <item itemvalue="JUnit.TestSeleniumTest.openPageMailRuTest" />
+        <item itemvalue="JUnit.MailruSeleniumTest.openPageMailRuFailedAuthTest" />
+        <item itemvalue="JUnit.MailruSeleniumTest.openPageMailRuAuthTest" />
       </list>
     </recent_temporary>
   </component>
@@ -114,42 +145,46 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="486" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584207704155">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="486" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1584207704155" />
     <state x="474" y="157" key="FileChooserDialogImpl" timestamp="1582539922730">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="474" y="157" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582539922730" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1582554657876">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1584209546390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582554657876" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1582554657876">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584209546390" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1584209546390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582554657876" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1582554657876">
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584209546390" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1584209546390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582554657876" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1582554657876">
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584209546390" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1584209546390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582554657876" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1582554657876">
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584209546390" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1584209546390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582554657876" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1582554657876">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584209546390" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1584209546390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582554657876" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1582554657876">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1584209546390" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1584209546390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582554657876" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1582554657876">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1584209546390" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1584209546390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582554657876" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1584209546390" />
     <state x="250" y="0" width="1042" height="824" key="SettingsEditor" timestamp="1582540062126">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -179,9 +214,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/TestSeleniumTest.java</url>
+          <url>file://$PROJECT_DIR$/src/mailru/MailruSeleniumTest.java</url>
           <line>24</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/teva_life/TevaLifeSeleniumTest.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
