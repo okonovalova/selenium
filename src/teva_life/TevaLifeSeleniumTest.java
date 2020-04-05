@@ -1,34 +1,32 @@
 package teva_life;
 
-import org.junit.jupiter.api.Test;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 import teva_life.pages.CategoryPage;
+import teva_life.pages.DetailsStoryPage;
 
 import java.time.Duration;
-import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class TevaLifeSeleniumTest {
+public class TevaLifeSeleniumTest extends Assert {
 
-    private boolean clickLoadMoreBtn(List <WebElement> categoryBodyChilds, WebDriver driver ) throws InterruptedException {
-        for (WebElement webElement:categoryBodyChilds){
-            String className = webElement.getAttribute("class");
-            if (className != null) {
-                if (className.equals("category__load-more button button--blue")) {
-                    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", webElement);
-                    webElement.click();
-                    Thread.sleep(2000);
-                    return true;
-                }
-            }
-        }
-        return false;
+    @DataProvider
+    public Object[][] categoryUrls() {
+        return new Object[][]{
+                {"https://lifeeffects.teva/eu/mental-health"},
+                {"https://lifeeffects.teva/eu/respiratory"},
+                {"https://lifeeffects.teva/eu/multiple-sclerosis"},
+                {"https://lifeeffects.teva/eu/cancer"},
+                {"https://lifeeffects.teva/eu/cardiovascular-disease"},
+                {"https://lifeeffects.teva/eu/caregivers"}
+        };
     }
+
+
     @Test
     public void checkCountStories() throws InterruptedException {
 
@@ -37,7 +35,7 @@ class TevaLifeSeleniumTest {
         CategoryPage categoryPage = new CategoryPage(driver, wait);
 
         categoryPage.maximizeWindow();
-        categoryPage.openPage();
+        categoryPage.openPage("https://lifeeffects.teva/eu/mental-health");
         categoryPage.clickRegionOptionControl("en-EU");
         categoryPage.clickBtnSubmitRegionOptionControl();
         categoryPage.clickBtnAllowCookies();
@@ -46,4 +44,25 @@ class TevaLifeSeleniumTest {
         int actualCountStories = categoryPage.getActualCountStories();
         assertEquals(countStoriesFromTitle, actualCountStories);
     }
+
+
+    @Test(dataProvider = "categoryUrls")
+    public void CheckCategoryTitleTest(String url) {
+        FirefoxDriver driver = new FirefoxDriver();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        CategoryPage categoryPage = new CategoryPage(driver, wait);
+        categoryPage.maximizeWindow();
+        categoryPage.openPage(url);
+        categoryPage.clickRegionOptionControl("en-EU");
+        categoryPage.clickBtnSubmitRegionOptionControl();
+        categoryPage.clickBtnAllowCookies();
+        String firstStoryCardTitle = categoryPage.getTitleFirsCard();
+        categoryPage.clickFirstStoryCard();
+
+        DetailsStoryPage detailsStoryPage = new DetailsStoryPage(driver, wait);
+        String actualStoryTitle = detailsStoryPage.getHeaderStory();
+
+        assertEquals(firstStoryCardTitle, actualStoryTitle);
+    }
+
 }

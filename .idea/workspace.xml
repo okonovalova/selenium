@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b38ee885-ec81-4821-8d4b-75ba0431cddf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/teva_life/pages/CategoryPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/teva_life/pages/DetailsStoryPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/selenium_tests/teva_life/TevaLifeSeleniumTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/selenium_tests/teva_life/TevaLifeSeleniumTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/teva_life/TevaLifeSeleniumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/teva_life/TevaLifeSeleniumTest.java" afterDir="false" />
@@ -21,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YFNgbD56nf4sekqnWZzzOmBds3" />
@@ -52,14 +57,14 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="teva_life" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="teva_life" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.TevaLifeSeleniumTest.checkCountStories">
+  <component name="RunManager" selected="JUnit.TevaLifeSeleniumTest.CheckCategoryTitleTest">
     <configuration name="TestSelenium" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestSelenium" />
       <module name="selenium_tests" />
@@ -76,21 +81,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MailruSeleniumTest.openPageMailRuAuthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium_tests" />
-      <option name="PACKAGE_NAME" value="mailru" />
-      <option name="MAIN_CLASS_NAME" value="mailru.MailruSeleniumTest" />
-      <option name="METHOD_NAME" value="openPageMailRuAuthTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MailruSeleniumTest.openPageMailRuFailedAuthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_tests" />
       <option name="PACKAGE_NAME" value="mailru" />
       <option name="MAIN_CLASS_NAME" value="mailru.MailruSeleniumTest" />
       <option name="METHOD_NAME" value="openPageMailRuFailedAuthTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TevaLifeSeleniumTest.CheckCategoryTitleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium_tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="teva_life.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="teva_life" />
+      <option name="MAIN_CLASS_NAME" value="teva_life.TevaLifeSeleniumTest" />
+      <option name="METHOD_NAME" value="CheckCategoryTitleTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TevaLifeSeleniumTest.CheckCategoryTitleTest" />
         <item itemvalue="JUnit.TevaLifeSeleniumTest.checkCountStories" />
         <item itemvalue="JUnit.MailruSeleniumTest" />
         <item itemvalue="Application.TestSelenium" />
         <item itemvalue="JUnit.MailruSeleniumTest.openPageMailRuFailedAuthTest" />
-        <item itemvalue="JUnit.MailruSeleniumTest.openPageMailRuAuthTest" />
       </list>
     </recent_temporary>
   </component>
@@ -133,53 +144,76 @@
       <option name="presentableId" value="Default" />
       <updated>1582534494404</updated>
     </task>
+    <task id="LOCAL-00001" summary="page object done">
+      <created>1584268292356</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584268292356</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="page object done" />
+    <option name="LAST_COMMIT_MESSAGE" value="page object done" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="486" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584207704155">
+    <state x="486" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584269989005">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="486" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1584207704155" />
+    <state x="486" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1584269989005" />
+    <state x="436" y="11" key="CommitChangelistDialog2" timestamp="1584268290360">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="436" y="11" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584268290360" />
     <state x="474" y="157" key="FileChooserDialogImpl" timestamp="1582539922730">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="474" y="157" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582539922730" />
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1584268082223">
+    <state width="1493" height="364" key="GridCell.Tab.0.bottom" timestamp="1584273637559">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584268082223" />
-    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1584268082223">
+    <state width="1493" height="364" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584273637559" />
+    <state width="1493" height="364" key="GridCell.Tab.0.center" timestamp="1584273637559">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584268082223" />
-    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1584268082222">
+    <state width="1493" height="364" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584273637559" />
+    <state width="1493" height="364" key="GridCell.Tab.0.left" timestamp="1584273637558">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584268082222" />
-    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1584268082223">
+    <state width="1493" height="364" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584273637558" />
+    <state width="1493" height="364" key="GridCell.Tab.0.right" timestamp="1584273637559">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584268082223" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1584211070995">
+    <state width="1493" height="364" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584273637559" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1584273637543">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584211070995" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1584211070995">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584273637543" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1584273637543">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1584211070995" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1584211070995">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1584273637543" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1584273637543">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1584211070995" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1584211070995">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1584273637543" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1584273637543">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1584211070995" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1584273637543" />
     <state x="250" y="0" width="1042" height="824" key="SettingsEditor" timestamp="1582540062126">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="250" y="0" width="1042" height="824" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582540062126" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1584268312720">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584268312720" />
     <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1582547258871">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -208,6 +242,16 @@
           <url>file://$PROJECT_DIR$/src/mailru/MailruSeleniumTest.java</url>
           <line>24</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/teva_life/TevaLifeSeleniumTest.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/teva_life/TevaLifeSeleniumTest.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
