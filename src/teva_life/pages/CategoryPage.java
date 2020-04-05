@@ -26,8 +26,8 @@ public class CategoryPage {
         driver.manage().window().maximize();
     }
 
-    public void openPage() {
-        driver.get("https://lifeeffects.teva/eu/mental-health");
+    public void openPage(String url) {
+        driver.get(url);
     }
 
     private List<WebElement> getRegionOptionControl() {
@@ -155,5 +155,22 @@ public class CategoryPage {
         return cards.size();
     }
 
+    private WebElement getFirstStoryCard() {
+        WebElement firstStoryCard = driver.findElement(By.className("card__title"));
+        return firstStoryCard;
+    }
+
+
+    public String getTitleFirsCard() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("category__panel")));
+        WebElement categoryPanel = driver.findElement(By.className("category__panel"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", categoryPanel);
+        WebElement firstStoryCard = getFirstStoryCard();
+        return firstStoryCard.getText();
+    }
+
+    public void clickFirstStoryCard() {
+        getFirstStoryCard().click();
+    }
 
 }

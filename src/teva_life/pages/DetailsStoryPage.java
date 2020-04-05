@@ -23,7 +23,7 @@ public class DetailsStoryPage {
     public String getHeaderStory() {
         waitByAppearHeaderStory();
         WebElement arcticleHeaderElement = driver.findElement(By.className("article__header"));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", arcticleHeaderElement);
-        return driver.findElement(By.className("title title--xl title--green-emerald indexed-content")).getText();
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", arcticleHeaderElement);
+        return driver.findElement(By.className("title")).getText();
     }
 }
